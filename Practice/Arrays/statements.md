@@ -1457,19 +1457,3 @@ Rotated array: 40 10 20 30
 
 ---
 
-## 🎓 Expected Learning Outcomes
-
-- Step-by-step shifting logic
-- Loop inside loop (nested control)
-- Understanding how rotation actually works internally
-
----
-
-## 💀 God Level Rules
-
-- Do NOT use reverse method here
-- Do NOT use extra arrays
-- Perform actual shifting
-- Understand element movement clearly
-
----
