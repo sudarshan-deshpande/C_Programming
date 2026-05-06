@@ -1457,3 +1457,24 @@ Rotated array: 40 10 20 30
 
 ---
 
+# 📘 Problem 21: Rotate Array Left by 1 Position (Single Rotation)
+
+## 🧠 Problem Statement
+
+Write a C program to rotate an array to the left by **1 position only**.
+
+- First element should move to the end
+- All other elements shift left by one index
+
+---
+
+## 🎯 Example
+
+### Input
+
+Enter number of elements: 5  
+Enter elements: 1 2 3 4 5
+
+### Output
+
+Rotated array: 2 3 4 5 1
