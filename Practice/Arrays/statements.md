@@ -1478,3 +1478,30 @@ Enter elements: 1 2 3 4 5
 ### Output
 
 Rotated array: 2 3 4 5 1
+
+---
+
+# 📘 Problem 22: Rotate Array Right by 1 Position (Single Rotation)
+
+## 🧠 Problem Statement
+
+Write a C program to rotate an array to the right by **1 position only**.
+
+- Last element should move to the beginning
+- All other elements shift right by one index
+
+---
+
+## 🎯 Example
+
+### Input
+
+Enter number of elements: 5  
+Enter elements: 1 2 3 4 5
+
+### Output
+
+Rotated array: 5 1 2 3 4
+
+---
+
