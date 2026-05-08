@@ -1505,3 +1505,115 @@ Rotated array: 5 1 2 3 4
 
 ---
 
+# 📘 Problem 23: Check if One Array is Rotation of Another
+
+## 🧠 Problem Statement
+
+Write a C program to check whether one array is a **rotation** of another array.
+
+Two arrays are considered rotations if one can be obtained by rotating the other.
+
+---
+
+## 🎯 Requirements
+
+- Ask the user to enter:
+  - Size of arrays (`n`)
+  - Elements of first array
+  - Elements of second array
+
+- Check whether second array is a rotation of first array
+
+- Print appropriate message
+
+---
+
+## 📌 Example 1
+
+### Input
+
+Enter number of elements: 5
+
+Enter elements of first array:  
+1 2 3 4 5
+
+Enter elements of second array:  
+3 4 5 1 2
+
+### Output
+
+Second array is a rotation of first array
+
+---
+
+## 📌 Example 2
+
+### Input
+
+Enter number of elements: 5
+
+Enter elements of first array:  
+1 2 3 4 5
+
+Enter elements of second array:  
+4 3 5 1 2
+
+### Output
+
+Second array is NOT a rotation of first array
+
+---
+
+## 📌 Example 3
+
+### Input
+
+Enter number of elements: 4
+
+Enter elements of first array:  
+10 20 30 40
+
+Enter elements of second array:  
+10 20 30 40
+
+### Output
+
+Second array is a rotation of first array
+
+---
+
+## ⚙️ Constraints
+
+- `1 <= n <= 100`
+
+If invalid input:
+
+Invalid input
+
+---
+
+## 🎓 Expected Learning Outcomes
+
+- Circular traversal thinking
+- Rotation pattern understanding
+- Nested loop matching
+- Index wrapping
+
+---
+
+## 💀 God Level Rules
+
+- Do NOT sort arrays
+- Do NOT use strings
+- Think circularly
+- Try solving without extra arrays
+
+---
+
+## 🧠 Hint
+
+If arrays are rotations:
+
+```text
+A = 1 2 3 4 5
+B = 3 4 5 1 2
