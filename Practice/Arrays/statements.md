@@ -1871,3 +1871,324 @@ After solving, test these edge cases carefully:
 5. Single element array
 
 ---
+
+# 📘 Problem 26: Find K-th Largest Distinct Element in Array
+
+## 🧠 Problem Statement
+
+Write a C program to find the **K-th largest distinct element** in an array.
+
+- Elements must be considered in **distinct form only**
+- Duplicate values should be ignored
+- Do NOT sort the array
+
+---
+
+## 🎯 Requirements
+
+- Ask the user to enter:
+  - Number of elements (`n`)
+  - Elements of the array
+  - Value of `k`
+
+- Find the K-th largest **distinct** element
+
+- Display the result
+
+- If the K-th largest distinct element does not exist, print an appropriate message
+
+---
+
+## 📌 Example 1
+
+### Input
+
+Enter number of elements: 7  
+Enter elements: 10 20 30 40 50 60 70  
+Enter k: 3
+
+### Output
+
+3-th largest distinct element = 50
+
+---
+
+## 📌 Example 2
+
+### Input
+
+Enter number of elements: 8  
+Enter elements: 10 50 50 40 40 30 20 10  
+Enter k: 2
+
+### Output
+
+2-th largest distinct element = 40
+
+---
+
+## 📌 Example 3
+
+### Input
+
+Enter number of elements: 5  
+Enter elements: 9 9 9 9 9  
+Enter k: 2
+
+### Output
+
+K-th largest distinct element not found
+
+---
+
+## 📌 Example 4
+
+### Input
+
+Enter number of elements: 6  
+Enter elements: -5 -1 -10 -3 -1 -5  
+Enter k: 2
+
+### Output
+
+2-th largest distinct element = -3
+
+---
+
+## ⚙️ Constraints
+
+- `1 <= n <= 100`
+- `1 <= k <= 100`
+
+If input is invalid:
+
+Invalid input
+
+---
+
+## 🎓 Expected Learning Outcomes
+
+- Advanced traversal logic
+- Distinct element filtering
+- Dynamic ranking logic
+- Nested loop reasoning
+- State management without sorting
+
+---
+
+## 💀 God Level Rules
+
+- Do NOT sort the array
+- Do NOT use extra arrays
+- Do NOT use built-in sorting functions
+- K-th largest must be DISTINCT
+- Handle duplicates correctly
+- Handle negative numbers correctly
+
+---
+
+## 🧠 Hint
+
+Think carefully:
+
+How can you repeatedly find:
+
+1st largest distinct  
+2nd largest distinct  
+3rd largest distinct  
+...  
+K-th largest distinct
+
+without sorting?
+
+You may need:
+
+- A variable storing previous maximum
+- A way to skip duplicates
+- Multiple traversals
+
+---
+
+## 🔥 Edge Cases You MUST Test
+
+1. All elements same  
+2. Negative numbers  
+3. k larger than distinct count  
+4. Array already descending  
+5. Array already ascending  
+6. Duplicate-heavy arrays  
+7. Single element array
+
+---
+
+## ⚠️ Important
+
+This problem is intentionally harder than Problem 11.
+
+Problem 11:
+- Only second largest
+
+This problem:
+- Generalized ranking problem
+- Dynamic logic
+- Much easier to make logical mistakes
+
+Think deeply before coding.
+
+---
+
+# 📘 Problem 27: Find K-th Smallest Distinct Element in Array
+
+## 🧠 Problem Statement
+
+Write a C program to find the **K-th smallest distinct element** in an array.
+
+- Elements must be considered in **distinct form only**
+- Duplicate values should be ignored
+- Do NOT sort the array
+
+---
+
+## 🎯 Requirements
+
+- Ask the user to enter:
+  - Number of elements (`n`)
+  - Elements of the array
+  - Value of `k`
+
+- Find the K-th smallest **distinct** element
+
+- Display the result
+
+- If the K-th smallest distinct element does not exist, print an appropriate message
+
+---
+
+## 📌 Example 1
+
+### Input
+
+Enter number of elements: 7  
+Enter elements: 70 60 50 40 30 20 10  
+Enter k: 3
+
+### Output
+
+3-th smallest distinct element = 30
+
+---
+
+## 📌 Example 2
+
+### Input
+
+Enter number of elements: 8  
+Enter elements: 10 10 20 20 30 40 40 50  
+Enter k: 2
+
+### Output
+
+2-th smallest distinct element = 20
+
+---
+
+## 📌 Example 3
+
+### Input
+
+Enter number of elements: 5  
+Enter elements: 9 9 9 9 9  
+Enter k: 2
+
+### Output
+
+K-th smallest distinct element not found
+
+---
+
+## 📌 Example 4
+
+### Input
+
+Enter number of elements: 6  
+Enter elements: -5 -1 -10 -3 -1 -5  
+Enter k: 2
+
+### Output
+
+2-th smallest distinct element = -5
+
+---
+
+## ⚙️ Constraints
+
+- `1 <= n <= 100`
+- `1 <= k <= 100`
+
+If input is invalid:
+
+Invalid input
+
+---
+
+## 🎓 Expected Learning Outcomes
+
+- Reverse ranking logic
+- Distinct element filtering
+- Traversal-based selection
+- Multi-pass scanning
+- Comparison inversion thinking
+
+---
+
+## 💀 God Level Rules
+
+- Do NOT sort the array
+- Do NOT use extra arrays
+- Do NOT use built-in sorting functions
+- K-th smallest must be DISTINCT
+- Handle duplicates correctly
+- Handle negative numbers correctly
+
+---
+
+## 🧠 Hint
+
+This problem is NOT a copy-paste of K-th largest.
+
+Your comparison logic will reverse.
+
+Think carefully:
+
+Previously:
+- You searched for values smaller than previous maximum
+
+Now:
+- You must search for values larger than previous minimum
+
+---
+
+## 🔥 Edge Cases You MUST Test
+
+1. All elements same  
+2. Negative numbers  
+3. k larger than distinct count  
+4. Array already ascending  
+5. Array already descending  
+6. Duplicate-heavy arrays  
+7. Single element array
+
+---
+
+## ⚠️ Important
+
+Do NOT use sorting.
+
+The purpose of this problem is to strengthen:
+- traversal logic
+- ranking logic
+- state tracking
+- conditional selection thinking
+
+---
+

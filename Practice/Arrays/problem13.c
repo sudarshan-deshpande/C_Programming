@@ -2,7 +2,6 @@
 
 int main()
 {
-
     int n;
     printf("Enter number of elements : ");
     scanf("%d", &n);
