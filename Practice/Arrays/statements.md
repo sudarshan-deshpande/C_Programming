@@ -1733,3 +1733,141 @@ current_length = 1;
 Update maximum carefully.
 
 ---
+
+# 📘 Problem 25: Find Longest Decreasing Continuous Subarray
+
+## 🧠 Problem Statement
+
+Write a C program to find the **length of the longest continuous decreasing subarray**.
+
+A continuous decreasing subarray means:
+
+Arr[i] > Arr[i + 1]
+
+for consecutive elements.
+
+You only need to print the **maximum length**.
+
+---
+
+## 🎯 Requirements
+
+- Ask the user to enter:
+  - Number of elements (`n`)
+  - Elements of the array
+
+- Find the longest continuous decreasing sequence
+
+- Print its length
+
+---
+
+## 📌 Example 1
+
+### Input
+
+Enter number of elements: 8  
+Enter elements: 9 8 7 5 6 4 3 2
+
+### Output
+
+Longest decreasing continuous subarray length = 4
+
+Explanation:
+
+9 8 7 5  -> length 4  
+6 4 3 2  -> length 4
+
+Maximum = 4
+
+---
+
+## 📌 Example 2
+
+### Input
+
+Enter number of elements: 6  
+Enter elements: 10 9 8 7 6 5
+
+### Output
+
+Longest decreasing continuous subarray length = 6
+
+---
+
+## 📌 Example 3
+
+### Input
+
+Enter number of elements: 5  
+Enter elements: 1 2 3 4 5
+
+### Output
+
+Longest decreasing continuous subarray length = 1
+
+---
+
+## ⚙️ Constraints
+
+- `1 <= n <= 100`
+
+If invalid input:
+
+Invalid input
+
+---
+
+## 🎓 Expected Learning Outcomes
+
+- Continuous pattern tracking
+- Reverse comparison logic
+- State management using counters
+- Maximum length maintenance
+- Single traversal optimization
+
+---
+
+## 💀 God Level Rules
+
+- Do NOT sort the array
+- Do NOT use extra arrays
+- Solve using single traversal after input
+- Target Time Complexity: `O(n)`
+
+---
+
+## 🧠 Hint
+
+Maintain:
+
+current_length  
+max_length
+
+If:
+
+arr[i] < arr[i - 1]
+
+then:
+
+current_length++
+
+otherwise:
+
+current_length = 1
+
+Update maximum carefully.
+
+---
+
+## 🔥 Your Mission
+
+After solving, test these edge cases carefully:
+
+1. Fully decreasing array  
+2. Fully increasing array  
+3. Multiple equal maximum segments  
+4. All equal elements  
+5. Single element array
+
+---
