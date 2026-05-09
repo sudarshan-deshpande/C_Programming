@@ -1614,6 +1614,122 @@ Invalid input
 
 If arrays are rotations:
 
-```text
+
 A = 1 2 3 4 5
 B = 3 4 5 1 2
+
+---
+
+# 📘 Problem 24: Find Longest Increasing Continuous Subarray
+
+## 🧠 Problem Statement
+
+Write a C program to find the **length of the longest continuous increasing subarray**.
+
+A continuous increasing subarray means:
+
+Arr[i] < Arr[i + 1]
+
+for consecutive elements.
+
+You only need to print the **maximum length**.
+
+---
+
+## 🎯 Requirements
+
+- Ask the user to enter:
+  - Number of elements (`n`)
+  - Elements of the array
+
+- Find the longest continuous increasing sequence
+
+- Print its length
+
+---
+
+## 📌 Example 1
+
+### Input
+
+Enter number of elements: 8  
+Enter elements: 1 2 3 1 2 3 4 0
+
+### Output
+
+Longest increasing continuous subarray length = 4
+
+---
+
+## 📌 Example 2
+
+### Input
+
+Enter number of elements: 6  
+Enter elements: 5 6 7 8 9 10
+
+### Output
+
+Longest increasing continuous subarray length = 6
+
+---
+
+## 📌 Example 3
+
+### Input
+
+Enter number of elements: 5  
+Enter elements: 9 8 7 6 5
+
+### Output
+
+Longest increasing continuous subarray length = 1
+
+---
+
+## ⚙️ Constraints
+
+- `1 <= n <= 100`
+
+If invalid input:
+
+Invalid input
+
+---
+
+## 🎓 Expected Learning Outcomes
+
+- Sequential pattern analysis
+- Maintaining running count
+- Maximum tracking logic
+- Array traversal mastery
+
+---
+
+## 💀 God Level Rules
+
+- Do NOT sort the array
+- Do NOT use extra arrays
+- Solve using single traversal after input
+- Target Time Complexity: `O(n)`
+
+---
+
+## 🧠 Hint
+
+Maintain two variables:
+
+current_length  
+max_length
+
+If current element is greater than previous:
+
+current_length++;
+
+Else:
+
+current_length = 1;
+
+Update maximum carefully.
+
+---
