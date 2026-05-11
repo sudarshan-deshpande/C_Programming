@@ -2192,3 +2192,164 @@ The purpose of this problem is to strengthen:
 
 ---
 
+# 📘 Problem 28: Find First Repeating Element in Array
+
+## 🧠 Problem Statement
+
+Write a C program to find the **first repeating element** in an array.
+
+A repeating element is an element that appears more than once.
+
+You must print the element whose **first occurrence appears earliest** in the array.
+
+---
+
+## 🎯 Requirements
+
+- Ask the user to enter:
+  - Number of elements (`n`)
+  - Elements of the array
+
+- Find the first element that repeats
+
+- Print that element
+
+- If no repeating element exists, print an appropriate message
+
+---
+
+## 📌 Example 1
+
+### Input
+
+Enter number of elements: 6  
+Enter elements: 10 20 30 20 40 10
+
+### Output
+
+First repeating element = 10
+
+---
+
+## 🧠 Explanation
+
+- 10 repeats
+- 20 also repeats
+
+But:
+
+- First occurrence of 10 is at index 0
+- First occurrence of 20 is at index 1
+
+So answer = 10
+
+---
+
+## 📌 Example 2
+
+### Input
+
+Enter number of elements: 7  
+Enter elements: 5 1 2 3 2 1 4
+
+### Output
+
+First repeating element = 1
+
+---
+
+## 📌 Example 3
+
+### Input
+
+Enter number of elements: 5  
+Enter elements: 1 2 3 4 5
+
+### Output
+
+No repeating element found
+
+---
+
+## 📌 Example 4
+
+### Input
+
+Enter number of elements: 6  
+Enter elements: 7 7 7 7 7 7
+
+### Output
+
+First repeating element = 7
+
+---
+
+## ⚙️ Constraints
+
+- `1 <= n <= 100`
+
+If invalid input:
+
+Invalid input
+
+---
+
+## 🎓 Expected Learning Outcomes
+
+- Nested loop mastery
+- Frequency-style thinking
+- Early occurrence tracking
+- Traversal order understanding
+- Logical scanning refinement
+
+---
+
+## 💀 God Level Rules
+
+- Do NOT sort the array
+- Preserve original order
+- Solve using traversal logic only
+- First means:
+  earliest FIRST OCCURRENCE
+- Stop once correct answer is found
+
+---
+
+## 🧠 Hint
+
+This problem is tricky.
+
+Do NOT search for:
+"which element repeats first"
+
+Instead think:
+
+"which repeating element appeared earliest"
+
+Those are different.
+
+---
+
+## 🔥 Edge Cases You MUST Test
+
+1. No repeating elements  
+2. All elements same  
+3. Multiple repeating elements  
+4. Negative numbers  
+5. Repeating element at beginning  
+6. Repeating element at end  
+7. Single element array
+
+---
+
+## ⚠️ Important
+
+This is an old frequency-analysis concept,
+but with a logical twist involving:
+- traversal order
+- first occurrence reasoning
+- nested loop control
+
+Think carefully before coding.
+
+---
