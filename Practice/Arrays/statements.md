@@ -2353,3 +2353,172 @@ but with a logical twist involving:
 Think carefully before coding.
 
 ---
+# 📘 Problem 29: Find Element with Maximum Frequency in Array
+
+## 🧠 Problem Statement
+
+Write a C program to find the element that appears the **maximum number of times** in an array.
+
+- If multiple elements have the same maximum frequency,
+  print the one whose **first occurrence appears earliest**
+
+---
+
+## 🎯 Requirements
+
+- Ask the user to enter:
+  - Number of elements (`n`)
+  - Elements of the array
+
+- Find:
+  - Frequency of each distinct element
+  - Element with highest frequency
+
+- Display:
+  - The element
+  - Its frequency
+
+---
+
+## 📌 Example 1
+
+### Input
+
+Enter number of elements: 8  
+Enter elements: 10 20 10 30 20 10 40 20
+
+### Output
+
+Element with maximum frequency = 10  
+Frequency = 3
+
+---
+
+## 📌 Example 2
+
+### Input
+
+Enter number of elements: 7  
+Enter elements: 5 1 2 1 2 3 4
+
+### Output
+
+Element with maximum frequency = 1  
+Frequency = 2
+
+---
+
+## 🧠 Explanation
+
+- 1 occurs 2 times
+- 2 also occurs 2 times
+
+But:
+
+- First occurrence of 1 comes earlier
+
+So answer = 1
+
+---
+
+## 📌 Example 3
+
+### Input
+
+Enter number of elements: 5  
+Enter elements: 7 7 7 7 7
+
+### Output
+
+Element with maximum frequency = 7  
+Frequency = 5
+
+---
+
+## 📌 Example 4
+
+### Input
+
+Enter number of elements: 6  
+Enter elements: -1 -2 -1 -3 -2 -1
+
+### Output
+
+Element with maximum frequency = -1  
+Frequency = 3
+
+---
+
+## ⚙️ Constraints
+
+- `1 <= n <= 100`
+
+If invalid input:
+
+Invalid input
+
+---
+
+## 🎓 Expected Learning Outcomes
+
+- Frequency counting using nested loops
+- Maximum tracking logic
+- Tie-breaking using traversal order
+- Distinct element handling
+- Conditional updates
+
+---
+
+## 💀 God Level Rules
+
+- Do NOT sort the array
+- Do NOT use extra arrays
+- Preserve original traversal order
+- Handle duplicates correctly
+- Handle ties carefully
+
+---
+
+## 🧠 Hint
+
+For every element:
+
+1. Count its frequency
+2. Compare with current maximum frequency
+
+Important:
+
+Update answer ONLY IF:
+
+current_frequency > maximum_frequency
+
+NOT when equal.
+
+Why?
+
+Because earliest occurrence must win.
+
+---
+
+## 🔥 Edge Cases You MUST Test
+
+1. All elements same  
+2. All elements unique  
+3. Multiple elements with same frequency  
+4. Negative numbers  
+5. Single element array  
+6. Large duplicate-heavy arrays
+
+---
+
+## ⚠️ Important
+
+This problem combines:
+
+- Problem 13 (frequency)
+- maximum tracking
+- first occurrence logic
+
+Very important logical combination problem.
+
+---
