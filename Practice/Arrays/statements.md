@@ -2522,3 +2522,174 @@ This problem combines:
 Very important logical combination problem.
 
 ---
+
+# 📘 Problem 30: Find Missing Number in Array (1 to N)
+
+## 🧠 Problem Statement
+
+An array contains `n-1` distinct numbers from the range:
+
+1 to n
+
+Exactly one number is missing.
+
+Write a C program to find the missing number.
+
+---
+
+## 🎯 Requirements
+
+- Ask the user to enter:
+  - Value of `n`
+  - `n-1` array elements
+
+- All elements are distinct
+- Elements belong to range `1` to `n`
+
+- Find and print the missing number
+
+---
+
+## 📌 Example 1
+
+### Input
+
+Enter n: 5  
+Enter elements: 1 2 4 5
+
+### Output
+
+Missing number = 3
+
+---
+
+## 📌 Example 2
+
+### Input
+
+Enter n: 6  
+Enter elements: 6 5 4 3 1
+
+### Output
+
+Missing number = 2
+
+---
+
+## 📌 Example 3
+
+### Input
+
+Enter n: 4  
+Enter elements: 2 3 4
+
+### Output
+
+Missing number = 1
+
+---
+
+## 📌 Example 4
+
+### Input
+
+Enter n: 7  
+Enter elements: 1 2 3 4 5 6
+
+### Output
+
+Missing number = 7
+
+---
+
+## ⚙️ Constraints
+
+- `2 <= n <= 100`
+
+If invalid input:
+
+Invalid input
+
+---
+
+## 🎓 Expected Learning Outcomes
+
+- Traversal logic
+- Mathematical reasoning
+- Sum accumulation
+- Difference analysis
+- Alternative thinking beyond nested loops
+
+---
+
+## 💀 God Level Rules
+
+- Do NOT sort the array
+- Do NOT use extra arrays
+- Try solving without nested loops
+- Target Time Complexity: `O(n)`
+
+---
+
+## 🧠 Hint 1 (Mathematical Approach)
+
+Sum of numbers from `1` to `n`:
+
+:contentReference[oaicite:0]{index=0}
+
+Now:
+
+- Calculate expected sum
+- Calculate actual array sum
+- Difference gives missing number
+
+---
+
+## 🧠 Hint 2 (Traversal Thinking)
+
+Expected:
+
+1 + 2 + 3 + ... + n
+
+Actual:
+
+sum of array elements
+
+Missing:
+
+expected_sum - actual_sum
+
+---
+
+## 🔥 Edge Cases You MUST Test
+
+1. Missing first number  
+2. Missing last number  
+3. Missing middle number  
+4. Smallest valid n  
+5. Reverse order input
+
+---
+
+## ⚠️ Important
+
+This is a classic problem.
+
+Looks simple.
+
+But teaches something extremely important:
+
+Sometimes:
+- mathematics
+- observation
+- formula thinking
+
+beats brute-force traversal.
+
+This shift in thinking is very important in:
+- optimization
+- system programming
+- exploit development
+- algorithm design
+
+---
