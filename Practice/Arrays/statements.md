@@ -2693,3 +2693,120 @@ This shift in thinking is very important in:
 - algorithm design
 
 ---
+
+# 📘 Problem 31: Find Missing Number Using XOR Logic
+
+## 🧠 Problem Statement
+
+An array contains `n-1` distinct numbers from the range:
+
+1 to n
+
+Exactly one number is missing.
+
+Write a C program to find the missing number using **XOR logic**.
+
+---
+
+## 🎯 Requirements
+
+- Ask the user to enter:
+  - Value of `n`
+  - `n-1` array elements
+
+- All elements are distinct
+- Elements belong to range `1` to `n`
+
+- Find and print the missing number using XOR
+
+---
+
+## 📌 Example 1
+
+### Input
+
+Enter n: 5  
+Enter elements: 1 2 4 5
+
+### Output
+
+Missing number = 3
+
+---
+
+## 📌 Example 2
+
+### Input
+
+Enter n: 6  
+Enter elements: 6 5 4 3 1
+
+### Output
+
+Missing number = 2
+
+---
+
+## 📌 Example 3
+
+### Input
+
+Enter n: 4  
+Enter elements: 2 3 4
+
+### Output
+
+Missing number = 1
+
+---
+
+## 📌 Example 4
+
+### Input
+
+Enter n: 7  
+Enter elements: 1 2 3 4 5 6
+
+### Output
+
+Missing number = 7
+
+---
+
+## ⚙️ Constraints
+
+- `2 <= n <= 100`
+
+If invalid input:
+
+Invalid input
+
+---
+
+## 🎓 Expected Learning Outcomes
+
+- Bitwise XOR operation
+- XOR cancellation property
+- Alternative problem-solving logic
+- Memory-efficient thinking
+- Mathematical-free optimization
+
+---
+
+## 💀 God Level Rules
+
+- Do NOT sort the array
+- Do NOT use nested loops
+- Do NOT use extra arrays
+- Target Time Complexity: `O(n)`
+- Target Space Complexity: `O(1)`
+
+---
+
+## 🧠 XOR Properties
+
+Important properties:
+
+```text
+a ^ a = 0
+a ^ 0 = a
