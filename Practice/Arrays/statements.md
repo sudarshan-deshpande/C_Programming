@@ -2803,10 +2803,137 @@ Invalid input
 
 ---
 
-## 🧠 XOR Properties
+# 📘 Problem 32: Find Missing Number Using Linear Search Logic
 
-Important properties:
+## 🧠 Problem Statement
 
-```text
-a ^ a = 0
-a ^ 0 = a
+An array contains `n-1` distinct numbers from the range:
+
+1 to n
+
+Exactly one number is missing.
+
+Write a C program to find the missing number using **linear search logic**.
+
+---
+
+## 🎯 Requirements
+
+- Ask the user to enter:
+  - Value of `n`
+  - `n-1` array elements
+
+- All elements are distinct
+- Elements belong to range `1` to `n`
+
+- Find and print the missing number
+
+- Do NOT use:
+  - mathematical sum formula
+  - XOR logic
+
+---
+
+## 📌 Example 1
+
+### Input
+
+Enter n: 5  
+Enter elements: 1 2 4 5
+
+### Output
+
+Missing number = 3
+
+---
+
+## 📌 Example 2
+
+### Input
+
+Enter n: 6  
+Enter elements: 6 5 4 3 1
+
+### Output
+
+Missing number = 2
+
+---
+
+## 📌 Example 3
+
+### Input
+
+Enter n: 4  
+Enter elements: 2 3 4
+
+### Output
+
+Missing number = 1
+
+---
+
+## 📌 Example 4
+
+### Input
+
+Enter n: 7  
+Enter elements: 1 2 3 4 5 6
+
+### Output
+
+Missing number = 7
+
+---
+
+## ⚙️ Constraints
+
+- `2 <= n <= 100`
+
+If invalid input:
+
+Invalid input
+
+---
+
+## 🎓 Expected Learning Outcomes
+
+- Linear search mastery
+- Nested loop traversal
+- Presence checking
+- Flag-based logic
+- Sequential verification thinking
+
+---
+
+## 💀 God Level Rules
+
+- Do NOT sort the array
+- Do NOT use extra arrays
+- Do NOT use mathematical sum formula
+- Do NOT use XOR logic
+
+---
+
+## 🧠 Hint
+
+Think differently.
+
+Instead of:
+
+"Which number is missing?"
+
+Think:
+
+"For every number from 1 to n,
+check whether it exists in the array."
+
+If a number is not found:
+
+That number is missing.
+
+---
+
+## 🧠 Traversal Strategy
+
+---
