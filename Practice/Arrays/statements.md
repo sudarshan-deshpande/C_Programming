@@ -2937,3 +2937,109 @@ That number is missing.
 ## 🧠 Traversal Strategy
 
 ---
+
+# 📘 Problem 33: Move All Zeroes to End of Array
+
+## 🧠 Problem Statement
+
+Write a C program to move all zeroes in an array to the **end** while maintaining the relative order of non-zero elements.
+
+The operation must be performed on the same array.
+
+---
+
+## 🎯 Requirements
+
+- Ask the user to enter:
+  - Number of elements (`n`)
+  - Elements of the array
+
+- Move all `0` elements to the end
+
+- Preserve the order of non-zero elements
+
+- Print the modified array
+
+---
+
+## 📌 Example 1
+
+### Input
+
+Enter number of elements: 7  
+Enter elements: 1 0 2 0 3 4 0
+
+### Output
+
+Modified array: 1 2 3 4 0 0 0
+
+---
+
+## 📌 Example 2
+
+### Input
+
+Enter number of elements: 5  
+Enter elements: 0 0 1 2 3
+
+### Output
+
+Modified array: 1 2 3 0 0
+
+---
+
+## 📌 Example 3
+
+### Input
+
+Enter number of elements: 6  
+Enter elements: 1 2 3 4 5 6
+
+### Output
+
+Modified array: 1 2 3 4 5 6
+
+---
+
+## 📌 Example 4
+
+### Input
+
+Enter number of elements: 5  
+Enter elements: 0 0 0 0 0
+
+### Output
+
+Modified array: 0 0 0 0 0
+
+---
+
+## ⚙️ Constraints
+
+- `1 <= n <= 100`
+
+If invalid input:
+
+Invalid input
+
+---
+
+## 🎓 Expected Learning Outcomes
+
+- Array modification
+- Element shifting logic
+- In-place transformation
+- Traversal and overwrite thinking
+- Index management
+
+---
+
+## 💀 God Level Rules
+
+- Do NOT use extra arrays
+- Preserve order of non-zero elements
+- Perform operation in-place
+- Target Time Complexity: `O(n)`
+
+---
+
