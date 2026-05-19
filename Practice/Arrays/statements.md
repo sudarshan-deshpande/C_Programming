@@ -3043,3 +3043,111 @@ Invalid input
 
 ---
 
+# 📘 Problem 34: Move All Negative Elements to Beginning of Array
+
+## 🧠 Problem Statement
+
+Write a C program to move all negative elements to the **beginning** of the array while preserving the relative order of elements.
+
+- Negative elements should appear first
+- Remaining elements should come after them
+- Relative order must remain unchanged
+
+The operation must be performed on the same array.
+
+---
+
+## 🎯 Requirements
+
+- Ask the user to enter:
+  - Number of elements (`n`)
+  - Elements of the array
+
+- Move all negative elements to the beginning
+
+- Preserve relative order
+
+- Print the modified array
+
+---
+
+## 📌 Example 1
+
+### Input
+
+Enter number of elements: 7  
+Enter elements: 1 -2 3 -4 5 -6 7
+
+### Output
+
+Modified array: -2 -4 -6 1 3 5 7
+
+---
+
+## 📌 Example 2
+
+### Input
+
+Enter number of elements: 6  
+Enter elements: -1 -2 -3 4 5 6
+
+### Output
+
+Modified array: -1 -2 -3 4 5 6
+
+---
+
+## 📌 Example 3
+
+### Input
+
+Enter number of elements: 5  
+Enter elements: 1 2 3 4 5
+
+### Output
+
+Modified array: 1 2 3 4 5
+
+---
+
+## 📌 Example 4
+
+### Input
+
+Enter number of elements: 6  
+Enter elements: -5 0 2 -1 3 -7
+
+### Output
+
+Modified array: -5 -1 -7 0 2 3
+
+---
+
+## ⚙️ Constraints
+
+- `1 <= n <= 100`
+
+If invalid input:
+
+Invalid input
+
+---
+
+## 🎓 Expected Learning Outcomes
+
+- In-place array modification
+- Conditional compaction logic
+- Order preservation
+- Multiple traversal strategy
+- Index management
+
+---
+
+## 💀 God Level Rules
+
+- Do NOT sort the array
+- Preserve relative order
+- Do NOT use library functions
+- Try solving with minimal extra space
+
+---
