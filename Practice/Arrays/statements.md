@@ -3151,3 +3151,114 @@ Invalid input
 - Try solving with minimal extra space
 
 ---
+
+# 📘 Problem 35: Move All Even Elements to Beginning and Odd Elements to End
+
+## 🧠 Problem Statement
+
+Write a C program to rearrange an array such that:
+
+- All even elements appear at the beginning
+- All odd elements appear at the end
+- Relative order of elements must remain unchanged
+
+The operation must be performed on the same array.
+
+---
+
+## 🎯 Requirements
+
+- Ask the user to enter:
+  - Number of elements (`n`)
+  - Elements of the array
+
+- Move:
+  - Even elements to front
+  - Odd elements to end
+
+- Preserve relative order
+
+- Print the modified array
+
+---
+
+## 📌 Example 1
+
+### Input
+
+Enter number of elements: 7  
+Enter elements: 1 2 3 4 5 6 7
+
+### Output
+
+Modified array: 2 4 6 1 3 5 7
+
+---
+
+## 📌 Example 2
+
+### Input
+
+Enter number of elements: 6  
+Enter elements: 2 4 6 1 3 5
+
+### Output
+
+Modified array: 2 4 6 1 3 5
+
+---
+
+## 📌 Example 3
+
+### Input
+
+Enter number of elements: 5  
+Enter elements: 1 3 5 7 9
+
+### Output
+
+Modified array: 1 3 5 7 9
+
+---
+
+## 📌 Example 4
+
+### Input
+
+Enter number of elements: 8  
+Enter elements: 8 1 6 3 4 5 2 7
+
+### Output
+
+Modified array: 8 6 4 2 1 3 5 7
+
+---
+
+## ⚙️ Constraints
+
+- `1 <= n <= 100`
+
+If invalid input:
+
+Invalid input
+
+---
+
+## 🎓 Expected Learning Outcomes
+
+- Generalized filtering logic
+- Stable partitioning
+- Multiple traversal strategy
+- Conditional overwrite thinking
+- Pattern adaptation
+
+---
+
+## 💀 God Level Rules
+
+- Do NOT sort the array
+- Preserve relative order
+- Do NOT use library functions
+- Try solving with minimal extra space
+
+---
