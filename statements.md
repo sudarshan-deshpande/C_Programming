@@ -723,4 +723,189 @@ No non-repeating element found
 - Avoiding unnecessary iterations  
 - Understanding element uniqueness logic  
 
+---
 
+# 📘 Problem : Library Book Management System
+
+## 🎯 Objective
+
+Create a menu-driven C program using structures to manage books in a library.
+
+The program should allow the user to:
+
+- Add books
+- Display books
+- Search books
+- Update price
+- Issue/return books
+- Sort books by price
+
+This problem is designed to revise:
+
+- Structures
+- Nested structures
+- Arrays of structures
+- Pointer to structure
+- String handling
+- Searching
+- Sorting
+- Menu-driven programming
+
+---
+
+# 📦 Structures to Use
+
+## 1️⃣ Date Structure
+
+```c
+struct Date
+{
+    int day;
+    int month;
+    int year;
+};
+```
+
+---
+
+## 2️⃣ Book Structure
+
+```c
+struct Book
+{
+    int id;
+    char name[50];
+    char author[50];
+    float price;
+
+    struct Date pubDate;
+
+    int available; // 1 = Available, 0 = Issued
+};
+```
+
+---
+
+# 🔥 Functional Requirements
+
+## MENU
+
+```text
+1. Add Book
+2. Display All Books
+3. Search Book by ID
+4. Search Books by Author
+5. Update Price
+6. Issue Book
+7. Return Book
+8. Sort Books by Price
+9. Exit
+```
+
+---
+
+# ⚔️ Requirements
+
+## ✅ Add Book
+
+Take all details from the user:
+
+- Book ID
+- Book Name
+- Author Name
+- Price
+- Publication Date
+
+Book should be available by default.
+
+---
+
+## ✅ Display All Books
+
+Display all books in proper table format.
+
+Example:
+
+```text
+ID   Name        Author      Price    Status
+101  C Basics    Dennis      450      Available
+```
+
+---
+
+## ✅ Search Book by ID
+
+User enters book ID.
+
+Display complete details if found.
+
+Otherwise print:
+
+```text
+Book Not Found
+```
+
+---
+
+## ✅ Search Books by Author
+
+User enters author name.
+
+Display all books written by that author.
+
+Use string handling functions.
+
+---
+
+## ✅ Update Price
+
+Update price of a book using Book ID.
+
+Use pointer to structure in this function.
+
+---
+
+## ✅ Issue Book
+
+Change book status from Available to Issued.
+
+---
+
+## ✅ Return Book
+
+Change book status from Issued to Available.
+
+---
+
+## ✅ Sort Books by Price
+
+Sort all books in ascending order of price.
+
+Manual sorting only.
+
+Library sorting functions are not allowed.
+
+---
+
+# ⚠️ Constraints
+
+- Maximum 100 books
+- Use functions for every operation
+- No global variables
+- Use arrays of structures
+- Use nested structures properly
+
+---
+
+# 🧠 Concepts Revised
+
+- Structures
+- Nested Structures
+- Arrays of Structures
+- Pointer to Structure
+- Searching
+- Sorting
+- String Handling
+- Menu Driven Programming
+
+---
