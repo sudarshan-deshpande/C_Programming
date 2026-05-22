@@ -725,7 +725,7 @@ No non-repeating element found
 
 ---
 
-# 📘 Problem : Library Book Management System
+# 📘 Problem 15: Library Book Management System
 
 ## 🎯 Objective
 
@@ -909,3 +909,37 @@ Library sorting functions are not allowed.
 - Menu Driven Programming
 
 ---
+
+# 📘 Problem 16: Employee Salary Record Using Structure
+
+## 🧠 Problem Statement
+
+Write a C program using `struct` to store details of one employee.
+
+The structure should contain:
+
+- Employee ID
+- Name
+- Salary
+
+Take input from the user and display the employee details.
+
+---
+
+# ⭐ Example
+
+## Input
+
+Enter Employee ID: 101  
+Enter Name: Rahul  
+Enter Salary: 45000
+
+---
+
+## Output
+
+Employee Details:
+
+ID: 101  
+Name: Rahul  
+Salary: 45000
