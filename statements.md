@@ -943,3 +943,82 @@ Employee Details:
 ID: 101  
 Name: Rahul  
 Salary: 45000
+
+---
+
+# 🧠 Linux System Programming Problem 17 — Multi-Process File Analyzer
+
+## 📘 Problem Statement
+
+Write a Linux system programming program in C that analyzes a text file using multiple child processes.
+
+Your program should:
+
+1. Take a filename as input from the user.
+2. Create **3 child processes** using `fork()`.
+
+Each child process must perform a different task on the same file:
+
+- Child 1:
+  Count total number of lines.
+
+- Child 2:
+  Count total number of words.
+
+- Child 3:
+  Count total number of characters.
+
+3. Each child process should:
+   - Open the file independently using `open()`
+   - Read file contents using `read()`
+   - Print its own result along with its PID.
+
+4. Parent process should:
+   - Wait for all child processes using `wait()` or `waitpid()`
+   - Print:
+     `"All child processes completed."`
+
+---
+
+# ⚙️ Rules
+
+- Use only Linux system calls wherever possible.
+- Do NOT use:
+  - `fopen()`
+  - `fscanf()`
+  - `fgets()`
+  - `printf()` for file reading
+- You MAY use:
+  - `open()`
+  - `read()`
+  - `close()`
+  - `fork()`
+  - `wait()`
+  - `write()`
+
+---
+
+# 🎯 Concepts Practiced
+
+- `fork()`
+- Process creation
+- Parent-child synchronization
+- File descriptors
+- Low-level file I/O
+- Linux process management
+- Buffer-based parsing
+- Concurrent process execution
+
+---
+
+# 💀 Challenge Extension (Optional)
+
+After completing the basic version:
+
+- Use `pipe()` so children send results back to parent.
+- Parent should print a final combined report.
+- Handle very large files efficiently.
+- Add error handling for all system calls.
+- Measure execution time using `clock_gettime()`.
+
+---
