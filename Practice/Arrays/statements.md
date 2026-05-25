@@ -34,7 +34,7 @@ Enter elements: 10 20 30 40 50
 Array elements are: 10 20 30 40 50
 
 ---
-
+  
 ## ⚙️ Constraints
 
 - `1 <= n <= 100`
