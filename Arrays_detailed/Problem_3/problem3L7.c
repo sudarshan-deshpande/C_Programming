@@ -1,15 +1,19 @@
-/*
-Problem 4 — Dynamic Reverse Traversal using Pointers
-
-Objective:
-Write a C program to dynamically allocate memory for n integers,
-store elements in heap memory, and display the elements in reverse
-order using pointer decrement traversal, then properly free memory.
-*/
-
+// Variation 7 — Dynamic Memory based Average Calculator using Pointer Decrement Reverse Traversal
 #include <stdio.h>
 #include <stdlib.h>
 
+float average(int *arr, int n);
+float average(int *arr, int n)
+{
+    int sum = 0;
+    for (int *ptr = arr + n - 1; ptr >= arr; ptr--) // Ithach hagtos
+    {
+        sum += *ptr;
+    }
+
+    float avg = (float)sum / n;
+    return avg;
+}
 int main()
 {
     int n;
@@ -29,21 +33,15 @@ int main()
         printf("No memory allocated\n");
         return 1;
     }
-
     printf("Enter elements: ");
-    for (int *ptr = arr; ptr < arr + n; ptr++)
+    for (int *ptr = arr + n - 1; ptr >= arr; ptr--) // Ithach hagtos
     {
         scanf("%d", ptr);
     }
 
-    printf("Reverse order: ");
-    for (int *ptr = arr + n - 1; ptr >= arr; ptr--) // IMP
-    {
-        printf("%d ", *ptr);
-    }
+    printf("Average = %.2f\n", average(arr, n));
 
     free(arr);
-
     arr = NULL;
 
     return 0;

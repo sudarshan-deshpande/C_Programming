@@ -21,6 +21,7 @@ int main()
         printf("Invalid input\n");
         return 0;
     }
+
     int *arr = malloc(n * sizeof(int));
 
     if (arr == NULL)

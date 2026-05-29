@@ -14,7 +14,6 @@ and properly free allocated memory.
 int main()
 {
     int n;
-
     printf("Enter number of elements: ");
     scanf("%d", &n);
 
@@ -23,7 +22,6 @@ int main()
         printf("Invalid input\n");
         return 0;
     }
-
     int *arr = malloc(n * sizeof(int));
 
     if (arr == NULL)
@@ -32,64 +30,60 @@ int main()
         return 1;
     }
 
-    printf("Enter elements: ");
-
+    printf("Enter elements in heap memory: ");
     for (int *ptr = arr; ptr < arr + n; ptr++)
     {
         scanf("%d", ptr);
     }
 
     int extra;
-
-    printf("How many more elements do you want? ");
+    printf("Enter number of extra elements: ");
     scanf("%d", &extra);
 
     if (extra < 1)
     {
-        printf("Invalid extra size\n");
-
-        free(arr);
-        arr = NULL;
-
+        printf("Invalid input\n");
         return 1;
     }
 
-    // Temporary pointer used to safely handle realloc failure
+    // Temporary pointer vaparneka to avoid memory leakage
     int *temp = realloc(arr, (n + extra) * sizeof(int));
 
     if (temp == NULL)
     {
-        printf("Memory reallocation failed\n");
-
+        printf("Reallocation failed\n");
         free(arr);
         arr = NULL;
-
         return 1;
     }
 
-    // Update arr only after successful realloc
-    arr = temp;
+    arr = temp; // arr ku kaisa malum hoinga next address ??
 
-    printf("Enter %d extra elements: ", extra);
-
-    // Fill only newly added memory region
+    printf("Enter extra elements: ");
     for (int *ptr = arr + n; ptr < arr + n + extra; ptr++)
     {
         scanf("%d", ptr);
     }
 
-    printf("All elements are: ");
-
-    // Print complete resized array
+    printf("Elements in array are: ");
     for (int *ptr = arr; ptr < arr + n + extra; ptr++)
     {
         printf("%d ", *ptr);
     }
 
-    printf("\n");
-
     free(arr);
-    arr = NULL;
 
+    arr = NULL;
     return 0;
 }
+
+/*
+Task: modular bananeka
+    1. get size
+    2. allocate
+    3. input
+    4. resize
+    5. input extra
+    6. display
+    7. cleanup
+*/

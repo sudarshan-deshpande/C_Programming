@@ -10,18 +10,29 @@ using pointer traversal and functions, then properly release memory.
 #include <stdio.h>
 #include <stdlib.h>
 
-void sumaverage(int *arr, int n);
-void sumaverage(int *arr, int n)
+int sum(int *arr, int n);
+float average(int *arr, int n);
+int sum(int *arr, int n)
 {
     int sum = 0;
     for (int *ptr = arr; ptr < arr + n; ptr++)
     {
         sum += *ptr;
     }
-    printf("Sum of elements in array = %d\n", sum);
-    float avg = (float)sum / n;
-    printf("Average = %.2f\n", avg);
+    return sum;
 }
+
+float average(int *arr, int n)
+{
+    int sum = 0;
+    for (int *ptr = arr; ptr < arr + n; ptr++)
+    {
+        sum += *ptr;
+    }
+    float average = (float)sum / n;
+    return average;
+}
+
 int main()
 {
     int n;
@@ -45,10 +56,14 @@ int main()
     printf("Enter elements: ");
     for (int *ptr = arr; ptr < arr + n; ptr++)
     {
-        scanf("%d", arr);
+        scanf("%d", ptr);
     }
 
-    sumaverage(arr, n);
+    printf("Sum of elements in array = %d\n", sum(arr, n));
+    printf("Average = %.2f\n", average(arr, n));
+
+    free(arr);
+    arr = NULL;
 
     return 0;
 }
