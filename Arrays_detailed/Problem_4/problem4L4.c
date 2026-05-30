@@ -1,21 +1,17 @@
-// Variation 1 — Maximum Element using while Loop Traversal
-
+// Variation 4 — Maximum Element using Reverse Pointer Traversal
 #include <stdio.h>
 
-int maximum(int arr[], int n);
-int maximum(int arr[], int n)
+int maximum(int *arr, int n);
+int maximum(int *arr, int n)
 {
     int max = arr[0];
-    int i = 1;
-    while (i < n)
+    for (int *ptr = arr + n - 1; ptr >= arr; ptr--)
     {
-        if (arr[i] > max)
+        if (*ptr > max)
         {
-            max = arr[i];
+            max = *ptr;
         }
-        i++;
     }
-
     return max;
 }
 
@@ -31,13 +27,12 @@ int main()
         return 0;
     }
 
-    printf("Enter elements: ");
     int arr[n];
-    int i = 0;
-    while (i < n)
+
+    printf("Enter elements: ");
+    for (int *ptr = arr + n - 1; ptr >= arr; ptr--)
     {
-        scanf("%d", &arr[i]);
-        i++;
+        scanf("%d", ptr);
     }
 
     printf("Maximum = %d\n", maximum(arr, n));
